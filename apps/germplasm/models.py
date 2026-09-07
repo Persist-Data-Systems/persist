@@ -293,7 +293,7 @@ class Parentage(BaseModel):
         blank=True,
         on_delete=models.PROTECT,
         related_name="child_edges",
-        help_text="Null only when role=OPEN_POLLINATED (no single identifiable parent).",
+        help_text="Null only for role=OPEN_POLLINATED (no identifiable parent).",
     )
     role = models.CharField(
         max_length=20,
