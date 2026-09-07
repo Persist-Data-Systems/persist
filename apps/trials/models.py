@@ -1,3 +1,6 @@
-from django.db import models
+"""Studies, plots, entries, and experimental design / field layout.
 
-# Create your models here.
+Domain models for this app are not implemented yet; see the project
+roadmap before adding them."""
+
+from django.db import models  # noqa: F401

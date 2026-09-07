@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project
+staticfiles/
+media/
+
+# uv pins the interpreter here; keep it in version control
+!.python-version

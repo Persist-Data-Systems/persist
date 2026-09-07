@@ -2,4 +2,6 @@ from django.apps import AppConfig
 
 
 class TrialsConfig(AppConfig):
-    name = 'trials'
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "apps.trials"
+    verbose_name = "Trials"

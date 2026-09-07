@@ -1,3 +1,6 @@
-from django.db import models
+"""Markers, marker sets, and genotype calls.
 
-# Create your models here.
+Domain models for this app are not implemented yet; see the project
+roadmap before adding them."""
+
+from django.db import models  # noqa: F401

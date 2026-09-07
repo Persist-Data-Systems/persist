@@ -2,4 +2,6 @@ from django.apps import AppConfig
 
 
 class TraitsConfig(AppConfig):
-    name = 'traits'
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "apps.traits"
+    verbose_name = "Traits"

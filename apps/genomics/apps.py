@@ -2,4 +2,6 @@ from django.apps import AppConfig
 
 
 class GenomicsConfig(AppConfig):
-    name = 'genomics'
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "apps.genomics"
+    verbose_name = "Genomics"

@@ -1,3 +1,3 @@
-from django.contrib import admin
+"""Admin registrations for the traits app (added alongside each model)."""
 
-# Register your models here.
+from django.contrib import admin  # noqa: F401
