@@ -17,7 +17,6 @@ class MatingSystem(models.TextChoices):
 
 class PropagationMode(models.TextChoices):
     SEED = "SEED", "Seed"
-    CUTTING = "CUTTING", "Cutting"
     CLONAL = "CLONAL", "Clonal"
     UNKNOWN = "UNKNOWN", "Unknown"
 
@@ -110,6 +109,10 @@ class GenotypeOrigin(models.TextChoices):
     MUTATION = "MUTATION", "Mutation / sport"
     DOUBLED_HAPLOID = "DOUBLED_HAPLOID", "Doubled haploid"
     INTROGRESSION = "INTROGRESSION", "Introgression line"
+    PEDIGREE_SELECTION = (
+        "PEDIGREE_SELECTION",
+        "Selected individual (pedigree/population breeding)",
+    )
     UNKNOWN = "UNKNOWN", "Unknown"
 
 
