@@ -26,8 +26,20 @@ apps/
   locations/        sites, fields, plot geometry (PostGIS), weather
 ```
 
-Domain models are not implemented yet — only the project scaffold and the
-`core` / `accounts` models exist.
+Implemented so far: `core` (Program, Organization, Address), `accounts`,
+`germplasm`, a stub `locations.Location`, and `inventory` storage/stock
+models. The other apps are still empty.
+
+## Domain notes
+
+- **Organization** is the top-level grouping: a university, company, agency,
+  etc. It can have many people, storage sites, locations, programs,
+  germplasm, trials, and phenotyping / genotyping events.
+- **Storage sites** belong to an organization and hold a tree of **storage
+  locations**: greenhouses, growth chambers, field sites, freezer rooms,
+  fridges, etc. Locations nest (freezer room > freezer > shelf > box >
+  sample), and a site can be tied to a geographic `Location` and/or an
+  `Address`.
 
 ## Getting started
 

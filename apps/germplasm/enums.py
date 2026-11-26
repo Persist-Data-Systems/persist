@@ -14,10 +14,12 @@ class MatingSystem(models.TextChoices):
     APOMICTIC = "APOMICT", "Apomictic"
     UNKNOWN = "UNKNOWN", "Unknown"
 
+
 class PropagationMode(models.TextChoices):
     SEED = "SEED", "Seed"
     CLONAL = "CLONAL", "Clonal"
     UNKNOWN = "UNKNOWN", "Unknown"
+
 
 class GrowthHabit(models.TextChoices):
     HERBACEOUS = "HERB", "Herbaceous"
@@ -107,7 +109,10 @@ class GenotypeOrigin(models.TextChoices):
     MUTATION = "MUTATION", "Mutation / sport"
     DOUBLED_HAPLOID = "DOUBLED_HAPLOID", "Doubled haploid"
     INTROGRESSION = "INTROGRESSION", "Introgression line"
-    PEDIGREE_SELECTION = "PEDIGREE_SELECTION", "Selected individual (pedigree/population breeding)"
+    PEDIGREE_SELECTION = (
+        "PEDIGREE_SELECTION",
+        "Selected individual (pedigree/population breeding)",
+    )
     UNKNOWN = "UNKNOWN", "Unknown"
 
 
